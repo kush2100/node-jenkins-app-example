@@ -1,6 +1,6 @@
 #!/bin/sh
-ssh ubuntu@192.168.0.235 <<EOF
- cd ~/node-jenkins-app-example
+ssh ubuntu@192.168.0.235 -p 22  <<EOF
+ cd /home/ubuntu/node-jenkins-app-example
  git pull
  npm install — production
  pm2 restart all
